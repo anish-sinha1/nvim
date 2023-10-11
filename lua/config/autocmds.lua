@@ -14,5 +14,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 -- hack
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = { "*.sql" },
-  command = "!npx --quiet psqlformat --write --spaces=2 --keywordCase=lowercase --noSpaceFunction % &> /dev/null ",
+  command = "silent! !npx --quiet psqlformat --write --spaces=2 --keywordCase=lowercase --noSpaceFunction % &> /dev/null ",
 })
+
+vim.api.nvim_create_autocmd("BufWritePost", { pattern = { "*.hs" }, command = "silent! !fourmolu -i % &> /dev/null" })

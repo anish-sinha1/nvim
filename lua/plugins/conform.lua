@@ -14,6 +14,7 @@ local M = {
         timeout_ms = 500,
         lsp_fallback = true,
       },
+
       formatters_by_ft = {
         lua = { "stylua" },
         -- Conform will run multiple formatters sequentially
