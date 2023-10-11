@@ -39,6 +39,13 @@ require("lazy").setup({
 
     -- custom
     { "akinsho/toggleterm.nvim", version = "*", config = true },
+    {
+      "folke/neoconf.nvim",
+      config = true,
+      cmd = "Neoconf",
+      dependencies = { "neovim/nvim-lspconfig" },
+    },
+
     { import = "plugins" },
   },
   defaults = {
