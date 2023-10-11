@@ -10,3 +10,9 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     require("conform").format({ bufnr = args.buf })
   end,
 })
+
+-- hack
+vim.api.nvim_create_autocmd("BufWritePost", {
+  pattern = { "*.sql" },
+  command = "!npx --quiet psqlformat --write --spaces=2 --keywordCase=lowercase --noSpaceFunction % &> /dev/null ",
+})
