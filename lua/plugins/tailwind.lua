@@ -39,6 +39,13 @@ local M = {
     --   require("colorizer").setup({ user_default_options = { tailwind = true } })
     -- end,
     opts = {
+      filetypes = { "css", "scss", "javascriptreact", "typescriptreact", "javascript", "typescript" },
+      rgb_fn = true,
+      hsl_fn = true,
+      css = true,
+      css_fn = true,
+      RRGGBBAA = true,
+      AARRGGBB = true,
       user_default_options = {
         tailwind = true,
       },
