@@ -1,5 +1,5 @@
 {
-  "LazyVim": { "branch": "main", "commit": "e8c26c70e27d468cec11926890105d61f99f9218" },
+  "LazyVim": { "branch": "main", "commit": "61f1c308bf6b87c51a2b49c314c7c7379f19a27e" },
   "LuaSnip": { "branch": "master", "commit": "cdbf6f41381e5ee4810b4b09284b603d8f18365d" },
   "SchemaStore.nvim": { "branch": "main", "commit": "854b38820036d81c5e6af1cae8797776ae5df56a" },
   "alpha-nvim": { "branch": "main", "commit": "234822140b265ec4ba3203e3e0be0e0bb826dff5" },
@@ -20,6 +20,7 @@
   "friendly-snippets": { "branch": "main", "commit": "43727c2ff84240e55d4069ec3e6158d74cb534b6" },
   "github-nvim-theme": { "branch": "main", "commit": "48f95f763e1a98e508260a20e448c3ff2d91213a" },
   "gitsigns.nvim": { "branch": "main", "commit": "ff01d34daaed72f271a8ffa088a7e839a60c640f" },
+  "glance.nvim": { "branch": "master", "commit": "8ed5cf3b3b1231ea696d88c9efd977027429d869" },
   "haskell-tools.nvim": { "branch": "master", "commit": "b19df600da8ef5fb4fb280815415ebd2a4228f0f" },
   "indent-blankline.nvim": { "branch": "master", "commit": "b808248f6a93ff4a2ed2932d68c6833ae167ecfc" },
   "kanagawa.nvim": { "branch": "master", "commit": "c19b9023842697ec92caf72cd3599f7dd7be4456" },
@@ -64,6 +65,7 @@
   "nvim-web-devicons": { "branch": "master", "commit": "a1e6268779411048a87f767a27380089362a0ce2" },
   "omnisharp-extended-lsp.nvim": { "branch": "main", "commit": "53edfb413a54c9e55dcddc9e9fa4977a897e4425" },
   "onedarkpro.nvim": { "branch": "main", "commit": "7c02b4eeb310173ef6d741e60200d72b76923eae" },
+  "palenightfall.nvim": { "branch": "main", "commit": "25a1e7d43256834a671174e5d83edb57f7bec1e0" },
   "persistence.nvim": { "branch": "main", "commit": "4b8051c01f696d8849a5cb8afa9767be8db16e40" },
   "plenary.nvim": { "branch": "master", "commit": "9ce85b0f7dcfe5358c0be937ad23e456907d410b" },
   "project.nvim": { "branch": "main", "commit": "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" },

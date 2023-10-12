@@ -138,6 +138,11 @@ local M = {
       -- },
     },
   },
+  {
+    "JoosepAlviste/palenightfall.nvim",
+    lazy = false,
+    opts = {},
+  },
 }
 
 return M
