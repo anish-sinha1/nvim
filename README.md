@@ -1,4 +1,20 @@
-# 💤 LazyVim
+## Neovim Config
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+My Neovim configuration, based on LazyVim. Currently, it has full support for the following languages (including LSP, syntax highlighting, and auto formatting on save):
+
+- Rust
+- Go
+- Python
+- JavaScript
+- TypeScript
+- JSX/TSX
+- CSS/SCSS
+- TailwindCSS
+- OCaml
+- Haskell
+- C
+- C++
+- CMake
+- C#
+
+It has untested support for Ruby, Java, Elixir, and Terraform
