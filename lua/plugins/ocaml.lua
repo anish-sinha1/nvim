@@ -15,33 +15,33 @@ local has_words_before = function()
   return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
 
-local cmp_kinds = {
-  Text = "",
-  Method = "",
-  Function = "",
-  Constructor = "",
-  Field = "",
-  Variable = "",
-  Class = "ﴯ",
-  Interface = "",
-  Module = "",
-  Property = "ﰠ",
-  Unit = "",
-  Value = "λ",
-  Enum = "",
-  Keyword = "",
-  Snippet = "",
-  Color = "",
-  File = "",
-  Reference = "",
-  Folder = "",
-  EnumMember = "",
-  Constant = "",
-  Struct = "",
-  Event = "",
-  Operator = "",
-  TypeParameter = "",
-}
+-- local cmp_kinds = {
+--   Text = "",
+--   Method = "",
+--   Function = "",
+--   Constructor = "",
+--   Field = "",
+--   Variable = "",
+--   Class = "ﴯ",
+--   Interface = "",
+--   Module = "",
+--   Property = "ﰠ",
+--   Unit = "",
+--   Value = "λ",
+--   Enum = "",
+--   Keyword = "",
+--   Snippet = "",
+--   Color = "",
+--   File = "",
+--   Reference = "",
+--   Folder = "",
+--   EnumMember = "",
+--   Constant = "",
+--   Struct = "",
+--   Event = "",
+--   Operator = "",
+--   TypeParameter = "",
+-- }
 
 local on_attach = function(client, bufnr)
   -- enable completion triggered by <C-x><C-o>
@@ -187,22 +187,22 @@ local M = {
           end,
         },
       }),
-      formatting = {
-        fields = { "kind", "abbr", "menu" },
-        format = function(entry, vim_item)
-          vim_item.kind = cmp_kinds[vim_item.kind] or ""
-          local lsp_icon = "🅻"
-          if lsp ~= nil and lsp.ocamllsp ~= nil then
-            lsp_icon = "🐫"
-          end
-          vim_item.menu = ({
-            buffer = "🅱",
-            nvim_lsp = lsp_icon,
-            luasnip = "㊊",
-          })[entry.source.name]
-          return vim_item
-        end,
-      },
+      -- formatting = {
+      --   fields = { "kind", "abbr", "menu" },
+      --   format = function(entry, vim_item)
+      --     vim_item.kind = cmp_kinds[vim_item.kind] or ""
+      --     local lsp_icon = "🅻"
+      --     if lsp ~= nil and lsp.ocamllsp ~= nil then
+      --       lsp_icon = "🐫"
+      --     end
+      --     vim_item.menu = ({
+      --       buffer = "🅱",
+      --       nvim_lsp = lsp_icon,
+      --       luasnip = "㊊",
+      --     })[entry.source.name]
+      --     return vim_item
+      --   end,
+      -- },
     },
   },
 }

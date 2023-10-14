@@ -24,6 +24,8 @@ local M = {
 
         sql = { "sql-formatter" },
 
+        shell = { "beautysh" },
+
         ["_"] = { "trim_whitespace" },
       },
 
