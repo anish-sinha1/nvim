@@ -20,12 +20,12 @@ local M = {
       close_on_exit = true,
       shell = vim.o.shell,
       auto_scroll = true,
-      winbar = {
-        enabled = false,
-        name_formatter = function(term) --  term: Terminal
-          return term.name
-        end,
-      },
+      -- winbar = {
+      --   enabled = false,
+      --   name_formatter = function(term) --  term: Terminal
+      --     return term.name
+      --   end,
+      -- },
       float_opts = {
         border = "single",
         winblend = 0,
