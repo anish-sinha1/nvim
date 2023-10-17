@@ -45,7 +45,29 @@ require("lazy").setup({
       cmd = "Neoconf",
       dependencies = { "neovim/nvim-lspconfig" },
     },
-
+    {
+      "nvim-lua/plenary.nvim",
+    },
+    {
+      "nvim-telescope/telescope-media-files.nvim",
+    },
+    {
+      "nvim-lua/popup.nvim",
+    },
+    {
+      "nvim-telescope/telescope.nvim",
+      opts = {
+        extensions = {
+          media_files = {
+            -- filetypes whitelist
+            -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+            filetypes = { "png", "webp", "jpg", "jpeg" },
+            -- find command (defaults to `fd`)
+            find_cmd = "rg",
+          },
+        },
+      },
+    },
     {
       "nvim-neorg/neorg",
       build = ":Neorg sync-parsers",

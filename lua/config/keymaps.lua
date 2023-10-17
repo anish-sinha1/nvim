@@ -16,3 +16,6 @@ vim.keymap.set("n", "<leader>gm", "<CMD>Glance implementations<CR>")
 vim.keymap.set("n", "<leader>ra", "<CMD>ToggleTermToggleAll<CR>")
 vim.keymap.set("n", "<leader>rs", "<CMD>TermSelect<CR>")
 vim.keymap.set("n", "<leader>rn", "<CMD>ToggleTermSetName<CR>")
+
+-- Image Preview
+vim.keymap.set("n", "<leader>sp", "<CMD>Telescope media_files<CR>")
