@@ -42,6 +42,7 @@
   "neo-tree.nvim": { "branch": "v3.x", "commit": "6f8c49956c89e9fefae6acdfe1d57c6293b0a03d" },
   "neoconf.nvim": { "branch": "main", "commit": "89fdbc02266d714413b805084a1b44d3cc8ce103" },
   "neodev.nvim": { "branch": "main", "commit": "11329ba9c0c03d3e976ba4e833d42164737bd402" },
+  "neorg": { "branch": "main", "commit": "969b3f106683c66ab685ecba2a67bf11cb806785" },
   "neotest": { "branch": "master", "commit": "1e67a504d03def3a6a1125d934cb511680f72555" },
   "neotest-elixir": { "branch": "master", "commit": "7904f8c0fedbe615ee3d75beb810d3e1426b05c6" },
   "neotest-go": { "branch": "main", "commit": "1a15e1136db43775214a3e7a598f8930c29c94b7" },
@@ -83,5 +84,6 @@
   "vim-illuminate": { "branch": "master", "commit": "3bd2ab64b5d63b29e05691e624927e5ebbf0fb86" },
   "vim-startuptime": { "branch": "master", "commit": "454b3de856b7bd298700de33d79774ca9b9e3875" },
   "vimtex": { "branch": "master", "commit": "03c83443108a6984bf90100f6d00ec270b84a339" },
-  "which-key.nvim": { "branch": "main", "commit": "7ccf476ebe0445a741b64e36c78a682c1c6118b7" }
+  "which-key.nvim": { "branch": "main", "commit": "7ccf476ebe0445a741b64e36c78a682c1c6118b7" },
+  "wrapping.nvim": { "branch": "master", "commit": "696febba72939cf9082e0fd9cb9c603254cfa8a6" }
 }

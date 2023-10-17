@@ -46,6 +46,29 @@ require("lazy").setup({
       dependencies = { "neovim/nvim-lspconfig" },
     },
 
+    {
+      "nvim-neorg/neorg",
+      build = ":Neorg sync-parsers",
+      dependencies = { "nvim-lua/plenary.nvim" },
+      config = function()
+        require("neorg").setup({
+          load = {
+            ["core.defaults"] = {}, -- Loads default behaviour
+            ["core.concealer"] = {}, -- Adds pretty icons to your documents
+            ["core.dirman"] = { -- Manages Neorg workspaces
+              config = {
+                workspaces = {
+                  notes = "~/Home/notes",
+                  journal = "~/Home/journal",
+                  work = "~/Home/work",
+                },
+              },
+            },
+          },
+        })
+      end,
+    },
+
     { import = "plugins" },
   },
   defaults = {

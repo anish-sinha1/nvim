@@ -1,0 +1,45 @@
+-- -- local tsconfig = require("nvim-treesitter.configs")
+--
+-- local M = {
+--   "nvim-neorg/neorg",
+--   -- run = ":Neorg sync-parsers", -- This is the important bit!
+--   -- ft = "norg",
+--   -- cmd = "Neorg",
+--   -- priority = 30,
+--   --
+--   build = ":Neorg sync-parsers",
+--   dependencies = { "nvim-lua/plenary.nvim" },
+--
+--   config = function()
+--     require("neorg").setup({
+--       -- configuration here
+--       ["core.defaults"] = {},
+--       ["core.dirman"] = {
+--         config = {
+--           workspaces = {
+--             work = "~/Home/notes/work",
+--             home = "~/Home/notes/home",
+--           },
+--         },
+--       },
+--       ["core.concealer"] = {
+--         folds = true,
+--         icon_preset = "basic",
+--       },
+--       ["core.export"] = {},
+--       ["core.export.markdown"] = {},
+--       ["core.manoeuvre"] = {},
+--       ["core.presenter"] = {},
+--       ["core.summary"] = {},
+--       ["core.ui.calendar"] = {},
+--     })
+--
+--     -- tsconfig.setup({
+--     --   ensure_installed = { "norg" },
+--     -- })
+--   end,
+-- }
+--
+local M = {}
+
+return M
