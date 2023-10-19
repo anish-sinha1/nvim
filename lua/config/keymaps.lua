@@ -1,6 +1,6 @@
 -- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+-- Default Keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional Keymaps here
 --
 -- Lua
 
@@ -19,3 +19,9 @@ vim.keymap.set("n", "<leader>rn", "<CMD>ToggleTermSetName<CR>")
 
 -- Image Preview
 vim.keymap.set("n", "<leader>sp", "<CMD>Telescope media_files<CR>")
+
+-- Searchbox
+
+vim.keymap.set("n", "/", "<CMD>SearchBoxIncSearch title='Find'<CR>", { noremap = true })
+vim.keymap.set("n", "/r", "<CMD>SearchBoxReplace title='Find and replace'<CR>", { noremap = true })
+vim.keymap.set("n", "/s", "<CMD>SearchBoxMatchAll<CR> title='Find'", { noremap = true })

@@ -24,7 +24,7 @@ local M = {
 
         sql = { "sql-formatter" },
 
-        shell = { "beautysh" },
+        cmake = { "cmake_format" },
 
         ["_"] = { "trim_whitespace" },
       },
