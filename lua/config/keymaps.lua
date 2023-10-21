@@ -36,3 +36,6 @@ vim.keymap.set("v", "<leader>ci", "<CMD>CarbonNow<CR>")
 
 -- Invert
 vim.keymap.set("n", "<leader>iw", require("nvim-toggler").toggle)
+
+-- Sniprun
+vim.keymap.set({ "n", "v" }, "<leader>ie", "<CMD>SnipRun<CR>", { noremap = true })
