@@ -30,3 +30,6 @@ vim.keymap.set("n", "<leader>o", "<CMD>OverseerRun<CR>", { noremap = true })
 
 -- Neogen
 vim.keymap.set("n", "<leader>cg", "<CMD>lua require('neogen').generate()<CR>", { noremap = true })
+
+-- Carbon Now
+vim.keymap.set("v", "<leader>ci", "<CMD>CarbonNow<CR>")
