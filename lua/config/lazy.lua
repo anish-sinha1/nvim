@@ -51,15 +51,15 @@ require("lazy").setup({
       cmd = "Neoconf",
       dependencies = { "neovim/nvim-lspconfig" },
     },
-    {
-      "nvim-lua/plenary.nvim",
-    },
-    {
-      "nvim-telescope/telescope-media-files.nvim",
-    },
-    {
-      "nvim-lua/popup.nvim",
-    },
+    -- {
+    --   "nvim-lua/plenary.nvim",
+    -- },
+    -- {
+    --   "nvim-telescope/telescope-media-files.nvim",
+    -- },
+    -- {
+    --   "nvim-lua/popup.nvim",
+    -- },
     {
       "nvim-telescope/telescope.nvim",
       opts = {

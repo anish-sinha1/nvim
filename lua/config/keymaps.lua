@@ -18,7 +18,7 @@ vim.keymap.set("n", "<leader>rs", "<CMD>TermSelect<CR>")
 vim.keymap.set("n", "<leader>rn", "<CMD>ToggleTermSetName<CR>")
 
 -- Image Preview
-vim.keymap.set("n", "<leader>sp", "<CMD>Telescope media_files<CR>")
+-- vim.keymap.set("n", "<leader>sp", "<CMD>Telescope media_files<CR>")
 
 -- Searchbox
 vim.keymap.set("n", "/", "<CMD>SearchBoxIncSearch title='Find'<CR>", { noremap = true })
@@ -33,3 +33,6 @@ vim.keymap.set("n", "<leader>cg", "<CMD>lua require('neogen').generate()<CR>", {
 
 -- Carbon Now
 vim.keymap.set("v", "<leader>ci", "<CMD>CarbonNow<CR>")
+
+-- Invert
+vim.keymap.set("n", "<leader>iw", require("nvim-toggler").toggle)
