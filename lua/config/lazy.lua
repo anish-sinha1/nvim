@@ -13,7 +13,7 @@ require("lazy").setup({
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
-        colorscheme = "catppuccin-mocha",
+        colorscheme = "tokyonight",
       },
     },
 
@@ -95,6 +95,17 @@ require("lazy").setup({
           },
         })
       end,
+    },
+
+    {
+      "danymat/neogen",
+      dependencies = "nvim-treesitter/nvim-treesitter",
+      -- config = true,
+      config = function()
+        require("neogen").setup({ snippet_engine = "luasnip" })
+      end,
+      -- Uncomment next line if you want to follow only stable versions
+      -- version = "*"
     },
 
     { import = "plugins" },

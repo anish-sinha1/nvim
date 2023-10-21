@@ -21,7 +21,12 @@ vim.keymap.set("n", "<leader>rn", "<CMD>ToggleTermSetName<CR>")
 vim.keymap.set("n", "<leader>sp", "<CMD>Telescope media_files<CR>")
 
 -- Searchbox
-
 vim.keymap.set("n", "/", "<CMD>SearchBoxIncSearch title='Find'<CR>", { noremap = true })
 vim.keymap.set("n", "/r", "<CMD>SearchBoxReplace title='Find and replace'<CR>", { noremap = true })
 vim.keymap.set("n", "/s", "<CMD>SearchBoxMatchAll<CR> title='Find'", { noremap = true })
+
+-- Overseer
+vim.keymap.set("n", "<leader>o", "<CMD>OverseerRun<CR>", { noremap = true })
+
+-- Neogen
+vim.keymap.set("n", "<leader>cg", "<CMD>lua require('neogen').generate()<CR>", { noremap = true })
