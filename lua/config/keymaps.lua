@@ -51,3 +51,7 @@ vim.keymap.set(
   "<CMD>lua require('sniprun.display').close_all()<CR>",
   { noremap = true, desc = "Close sniprun display" }
 )
+
+-- Fold
+-- vim.keymap.set("n", "zR", "<CMD>lua require('ufo').openAllFolds<CR>")
+-- vim.keymap.set("n", "zM", "<CMD>lua require('ufo').closeAllFolds<CR>")
