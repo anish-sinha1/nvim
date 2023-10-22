@@ -38,4 +38,16 @@ vim.keymap.set("v", "<leader>ci", "<CMD>CarbonNow<CR>")
 vim.keymap.set("n", "<leader>iw", require("nvim-toggler").toggle)
 
 -- Sniprun
-vim.keymap.set({ "n", "v" }, "<leader>ie", "<CMD>SnipRun<CR>", { noremap = true })
+vim.keymap.set("n", "<leader>ix", "<CMD>lua require('sniprun').run()<CR>", { noremap = true, desc = "Run line" })
+vim.keymap.set(
+  "v",
+  "<leader>ib",
+  "<CMD>lua require('sniprun').run('v')<CR>",
+  { noremap = true, desc = "Run selected block" }
+)
+vim.keymap.set(
+  "n",
+  "<leader>ic",
+  "<CMD>lua require('sniprun.display').close_all()<CR>",
+  { noremap = true, desc = "Close sniprun display" }
+)
