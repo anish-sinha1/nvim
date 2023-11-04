@@ -123,6 +123,20 @@ local M = {
     "iagorrr/noctishc.nvim",
     lazy = true,
   },
+  {
+    "cpea2506/one_monokai.nvim",
+    lazy = false,
+    opts = {
+      -- transparent = true,
+    },
+  },
+  {
+    "JoosepAlviste/palenightfall.nvim",
+    lazy = false,
+    opts = {
+      transparent = false,
+    },
+  },
 }
 
 return M

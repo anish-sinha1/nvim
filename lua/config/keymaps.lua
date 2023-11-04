@@ -32,7 +32,7 @@ vim.keymap.set("n", "<leader>o", "<CMD>OverseerRun<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>cg", "<CMD>lua require('neogen').generate()<CR>", { noremap = true })
 
 -- Carbon Now
-vim.keymap.set("v", "<leader>ci", "<CMD>CarbonNow<CR>")
+vim.keymap.set("v", "<leader>ci", "<CMD>'<,'>CarbonNow<CR>")
 
 -- Invert
 vim.keymap.set("n", "<leader>iw", require("nvim-toggler").toggle)
@@ -51,6 +51,9 @@ vim.keymap.set(
   "<CMD>lua require('sniprun.display').close_all()<CR>",
   { noremap = true, desc = "Close sniprun display" }
 )
+
+-- telescope snippets
+vim.keymap.set("n", "<leader>sl", "<CMD>lua require('telescope').extensions.luasnip.luasnip({})<CR>")
 
 -- Fold
 -- vim.keymap.set("n", "zR", "<CMD>lua require('ufo').openAllFolds<CR>")

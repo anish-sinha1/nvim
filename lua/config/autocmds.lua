@@ -18,3 +18,5 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 })
 
 vim.api.nvim_create_autocmd("BufWritePost", { pattern = { "*.hs" }, command = "silent! !fourmolu -i % &> /dev/null" })
+
+vim.api.nvim_create_autocmd("BufEnter", { pattern = { "*" }, command = "set nornu" })

@@ -5,7 +5,6 @@ if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", lazypath })
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
-
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
@@ -38,7 +37,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
     { import = "lazyvim.plugins.extras.linting.eslint" },
-    { import = "lazyvim.plugins.extras.linting.nvim-lint" },
+    { import = "lazyvim.plugins.extras.lsp.none-ls" },
+    -- { import = "lazyvim.plugins.extras.linting.nvim-lint" },
     { import = "lazyvim.plugins.extras.test.core" },
     { import = "lazyvim.plugins.extras.ui.edgy" },
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
@@ -63,20 +63,20 @@ require("lazy").setup({
     -- {
     --   "nvim-lua/popup.nvim",
     -- },
-    {
-      "nvim-telescope/telescope.nvim",
-      opts = {
-        extensions = {
-          media_files = {
-            -- filetypes whitelist
-            -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
-            filetypes = { "png", "webp", "jpg", "jpeg" },
-            -- find command (defaults to `fd`)
-            find_cmd = "rg",
-          },
-        },
-      },
-    },
+    -- {
+    --   "nvim-telescope/telescope.nvim",
+    --   opts = {
+    --     extensions = {
+    --       media_files = {
+    --         -- filetypes whitelist
+    --         -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+    --         filetypes = { "png", "webp", "jpg", "jpeg" },
+    --         -- find command (defaults to `fd`)
+    --         find_cmd = "rg",
+    --       },
+    --     },
+    --   },
+    -- },
     {
       "nvim-neorg/neorg",
       build = ":Neorg sync-parsers",
@@ -137,3 +137,4 @@ require("lazy").setup({
     },
   },
 })
+vim.cmd.colorscheme("tokyonight-moon")
