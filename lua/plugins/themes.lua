@@ -137,6 +137,25 @@ local M = {
       transparent = false,
     },
   },
+  {
+    "Yazeed1s/minimal.nvim",
+    lazy = false,
+  },
+  {
+    {
+      "maxmx03/fluoromachine.nvim",
+      config = function()
+        local fm = require("fluoromachine")
+
+        fm.setup({
+          glow = true,
+          theme = "fluoromachine",
+        })
+
+        vim.cmd.colorscheme("fluoromachine")
+      end,
+    },
+  },
 }
 
 return M

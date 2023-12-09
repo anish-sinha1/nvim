@@ -21,9 +21,9 @@ vim.keymap.set("n", "<leader>rn", "<CMD>ToggleTermSetName<CR>")
 -- vim.keymap.set("n", "<leader>sp", "<CMD>Telescope media_files<CR>")
 
 -- Searchbox
-vim.keymap.set("n", "/", "<CMD>SearchBoxIncSearch title='Find'<CR>", { noremap = true })
-vim.keymap.set("n", "/r", "<CMD>SearchBoxReplace title='Find and replace'<CR>", { noremap = true })
-vim.keymap.set("n", "/s", "<CMD>SearchBoxMatchAll<CR> title='Find'", { noremap = true })
+vim.keymap.set("n", "/", "<CMD>SearchBoxIncSearch<CR>", { noremap = true })
+vim.keymap.set("n", "//", "<CMD>SearchBoxReplace<CR>", { noremap = true })
+-- vim.keymap.set("n", "//s", "<CMD>SearchBoxMatchAll<CR>", { noremap = true })
 
 -- Overseer
 vim.keymap.set("n", "<leader>o", "<CMD>OverseerRun<CR>", { noremap = true })
@@ -54,6 +54,9 @@ vim.keymap.set(
 
 -- telescope snippets
 vim.keymap.set("n", "<leader>sl", "<CMD>lua require('telescope').extensions.luasnip.luasnip({})<CR>")
+
+-- symbols outline
+vim.keymap.set("n", "<leader>sO", "<CMD>SymbolsOutline<CR>", { noremap = true, desc = "View symbols" })
 
 -- Fold
 -- vim.keymap.set("n", "zR", "<CMD>lua require('ufo').openAllFolds<CR>")

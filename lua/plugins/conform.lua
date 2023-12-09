@@ -19,7 +19,7 @@ local M = {
         lua = { "stylua" },
         -- Conform will run multiple formatters sequentially
         python = { "isort", "black" },
-        rust = { "rustfmt" },
+        rust = { "rustfmt --edition=2021" },
         -- Use a sub-list to run only the first available formatter
         javascript = { { "prettierd", "prettier" } },
 
@@ -29,6 +29,9 @@ local M = {
 
         c = { "clang_format" },
         cpp = { "clang_format" },
+        java = { "google-java-format" },
+
+        ocaml = { "ocamlformat" },
 
         ["_"] = { "trim_whitespace" },
       },
